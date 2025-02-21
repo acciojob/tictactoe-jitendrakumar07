@@ -1,25 +1,41 @@
 /*  your css code here. If applicable */
-container {
-      max-width: 600px;
+ .container {
+      max-width: 500px;
       margin: 0 auto;
       text-align: center;
       font-family: Arial, sans-serif;
     }
+    #playerInputs {
+      margin-top: 50px;
+    }
+    input {
+      padding: 10px;
+      margin: 5px;
+      width: 200px;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+    }
+    #game {
+      margin-top: 30px;
+    }
     #board {
       display: grid;
       grid-template-columns: repeat(3, 100px);
-      grid-gap: 10px;
+      grid-gap: 5px;
       justify-content: center;
       margin-top: 20px;
     }
     .cell {
       width: 100px;
       height: 100px;
-      background-color: #f0f0f0;
-      font-size: 2em;
+      border: 1px solid #000;
       display: flex;
       align-items: center;
       justify-content: center;
+      font-size: 2em;
       cursor: pointer;
     }
     .hidden {
@@ -27,16 +43,5 @@ container {
     }
     .message {
       margin-top: 20px;
-      font-size: 1.2em;
       font-weight: bold;
     }
-    input {
-      margin: 5px;
-      padding: 8px;
-      font-size: 1em;
-    }
-    button {
-      padding: 8px 12px;
-      font-size: 1em;
-      cursor: pointer;
-	}
